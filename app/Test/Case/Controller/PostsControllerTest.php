@@ -2,15 +2,15 @@
 
 
 
-class PostsControllerTest extends ControllerTestCase {
+class PostControllerTest extends ControllerTestCase {
     
     public function setUp() {
         parent::setUp();
-        $this->Posts = ClassRegistry::init('Posts');
+        $this->Post = ClassRegistry::init('Post');
     }
     
     public function tearDown() {
-        unset($this->Posts);
+        unset($this->Post);
         parent::tearDown();
     }
     
@@ -36,27 +36,50 @@ class PostsControllerTest extends ControllerTestCase {
     }
     
     public function testAdd() {
-        
-        $numRecordsBefore = $this->Posts->find('count');
+        $numRecordsBefore = $this->Post->find('count');
         $data = array(
                 'title' => 'test title',
                 'body' => 'test body message',
-                'test' => true,
                 'author_id' => 0,
-            );
+        );
         $Postdata = array(
             'Post' => $data
         );
         $this->testAction('/posts/add', array('data' => $Postdata));
-        $numRecordsAfter = $this->Posts->find('count');
-        $testResponse = $this->Posts->find('first', array('order' => array('id' => 'DESC') ));
-        //$testResponse =  $numRecordsAfter = $this->Post->find('count');
-        //$this->assertTrue($testResponse == $data);
-        $this->assertEquals($numRecordsBefore+1, $numRecordsAfter);
-        //$this->testAction('/posts/add', array('data' => $data));
-        //print_r($a);
-    }    
+        $numRecordsAfter = $this->Post->find('count');
+        $testResponse = $this->Post->find('first', array('order' => array('id' => 'DESC') ));
+        $this->assertEquals($testResponse['Post']["title"],$Postdata['Post']["title"]);
+        $this->assertEquals($testResponse['Post']["body"],$Postdata['Post']["body"]);
+        $this->assertEquals($numRecordsBefore+1, $numRecordsAfter);       
+    }
     
+    public function testEdit() {
+        $numRecordsBefore = $this->Post->find('count');
+        $data = array(
+            'title' => 'test title edited',
+            'body' => 'test body message edited',
+            'id' => 10,
+        );
+        $Postdata = array(
+            'Post' => $data
+        );
+        $this->testAction('/posts/edit', array('data' => $Postdata));
+        $numRecordsAfter = $this->Post->find('count');
+        $testResponse = $this->Post->find('first', array('order' => array('id' => $data['id']) ));
+        $this->assertEquals($testResponse['Post']["title"],$Postdata['Post']["title"]);
+        $this->assertEquals($testResponse['Post']["body"],$Postdata['Post']["body"]);
+        $this->assertEquals($numRecordsBefore, $numRecordsAfter);       
+        
+        $data = array(
+            'title' => 'test title edited',
+            'body' => 'test body message edited',
+            'id' => -1,
+        );
+        $Postdata = array(
+            'Post' => $data
+        );
+         $this->expectException($this->testAction('/posts/edit', array('data' => $Postdata)));
+    }
 }
 /* 
  * To change this license header, choose License Headers in Project Properties.

@@ -23,19 +23,10 @@ class PostsController extends Controller {
     
      public function add() {
         if ($this->request->is('post')) {
-            $test = $this->request->data('key');
-            echo $test;
             $this->Post->create();
             if ($this->Post->save($this->request->data)) {
                 $this->Flash->success(__('Your post has been saved.'));
-                if($test)
-                {
-                    return true;
-                }
-                else
-                {
-                    return $this->redirect(array('action' => 'index'));
-                }
+                return $this->redirect(array('action' => 'index'));
             }
             $this->Flash->error(__('Unable to add your post.'));
         }
@@ -45,12 +36,10 @@ class PostsController extends Controller {
         if (!$id) {
             throw new NotFoundException(__('Invalid post'));
         }
-
         $post = $this->Post->findById($id);
         if (!$post) {
             throw new NotFoundException(__('Invalid post'));
         }
-
         if ($this->request->is(array('post', 'put'))) {
             $this->Post->id = $id;
             if ($this->Post->save($this->request->data)) {
@@ -59,7 +48,6 @@ class PostsController extends Controller {
             }
             $this->Flash->error(__('Unable to update your post.'));
         }
-
         if (!$this->request->data) {
             $this->request->data = $post;
         }
