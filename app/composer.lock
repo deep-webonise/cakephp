@@ -1,0 +1,695 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "4186e6fe7044f97404181d38223fe68c",
+    "packages": [
+        {
+            "name": "cakephp/cakephp",
+            "version": "2.9.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cakephp/cakephp.git",
+                "reference": "7de6cf0aa5851e398921cfa0c696d134e8ce3b0b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cakephp/cakephp/zipball/7de6cf0aa5851e398921cfa0c696d134e8ce3b0b",
+                "reference": "7de6cf0aa5851e398921cfa0c696d134e8ce3b0b",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mcrypt": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "cakephp/cakephp-codesniffer": "^1.0.0",
+                "phpunit/phpunit": "3.7.*"
+            },
+            "bin": [
+                "lib/Cake/Console/cake"
+            ],
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "CakePHP Community",
+                    "homepage": "https://github.com/cakephp/cakephp/graphs/contributors"
+                }
+            ],
+            "description": "The CakePHP framework",
+            "homepage": "http://cakephp.org",
+            "keywords": [
+                "framework"
+            ],
+            "time": "2017-01-24T01:47:14+00:00"
+        },
+        {
+            "name": "composer/installers",
+            "version": "v1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/installers.git",
+                "reference": "d78064c68299743e0161004f2de3a0204e33b804"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/installers/zipball/d78064c68299743e0161004f2de3a0204e33b804",
+                "reference": "d78064c68299743e0161004f2de3a0204e33b804",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0"
+            },
+            "replace": {
+                "roundcube/plugin-installer": "*",
+                "shama/baton": "*"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.*@dev",
+                "phpunit/phpunit": "4.1.*"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Composer\\Installers\\Plugin",
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\Installers\\": "src/Composer/Installers"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Robinson Young",
+                    "email": "kyle@dontkry.com",
+                    "homepage": "https://github.com/shama"
+                }
+            ],
+            "description": "A multi-framework Composer library installer",
+            "homepage": "https://composer.github.io/installers/",
+            "keywords": [
+                "Craft",
+                "Dolibarr",
+                "Hurad",
+                "ImageCMS",
+                "MODX Evo",
+                "Mautic",
+                "OXID",
+                "Plentymarkets",
+                "RadPHP",
+                "SMF",
+                "Thelia",
+                "WolfCMS",
+                "agl",
+                "aimeos",
+                "annotatecms",
+                "attogram",
+                "bitrix",
+                "cakephp",
+                "chef",
+                "cockpit",
+                "codeigniter",
+                "concrete5",
+                "croogo",
+                "dokuwiki",
+                "drupal",
+                "elgg",
+                "expressionengine",
+                "fuelphp",
+                "grav",
+                "installer",
+                "joomla",
+                "kohana",
+                "laravel",
+                "lithium",
+                "magento",
+                "mako",
+                "mediawiki",
+                "modulework",
+                "moodle",
+                "phpbb",
+                "piwik",
+                "ppi",
+                "puppet",
+                "reindex",
+                "roundcube",
+                "shopware",
+                "silverstripe",
+                "symfony",
+                "typo3",
+                "wordpress",
+                "yawik",
+                "zend",
+                "zikula"
+            ],
+            "time": "2016-08-13T20:53:52+00:00"
+        },
+        {
+            "name": "mthaml/mthaml",
+            "version": "1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/arnaud-lb/MtHaml.git",
+                "reference": "b7e0c72883ee3efcf8b8819210b90496158b00d4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/arnaud-lb/MtHaml/zipball/b7e0c72883ee3efcf8b8819210b90496158b00d4",
+                "reference": "b7e0c72883ee3efcf8b8819210b90496158b00d4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "conflict": {
+                "mthaml/mthaml-bundle": "<1.1.0"
+            },
+            "require-dev": {
+                "cebe/markdown": "~1",
+                "coffeescript/coffeescript": "~1",
+                "erusev/parsedown": "*",
+                "fluxbb/commonmark": "~1@dev",
+                "gregwar/rst": "~1",
+                "kzykhys/ciconia": "~1",
+                "leafo/lessphp": "*",
+                "leafo/scssphp": "*",
+                "league/commonmark": ">=0.9",
+                "michelf/php-markdown": "~1.3",
+                "oyejorge/less.php": "*",
+                "twig/twig": "~1.12|~2.0"
+            },
+            "suggest": {
+                "cebe/markdown": "If you want to use :markdown filter",
+                "coffeescript/coffeescript": "If you want to use :coffee or :coffeescript filter",
+                "erusev/parsedown": "If you want to use :markdown filter",
+                "fluxbb/commonmark": "If you want to use :markdown filter",
+                "gregwar/rst": "If you want to use :rest filter",
+                "kzykhys/ciconia": "If you want to use :markdown filter",
+                "leafo/lessphp": "If you want to use :less filter",
+                "leafo/scssphp": "If you want to use :scss filter",
+                "league/commonmark": "If you want to use :markdown filter",
+                "michelf/php-markdown": "If you want to use :markdown filter",
+                "oyejorge/less.php": "If you want to use :less filter",
+                "twig/twig": "If you want to use Twig templating engine"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "MtHaml\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Arnaud Le Blanc",
+                    "email": "arnaud.lb@gmail.com"
+                }
+            ],
+            "description": "HAML for PHP",
+            "homepage": "https://github.com/arnaud-lb/MtHaml",
+            "keywords": [
+                "HAML"
+            ],
+            "time": "2015-12-17T09:48:00+00:00"
+        },
+        {
+            "name": "tiutalk/haml",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TiuTalk/haml.git",
+                "reference": "051a83e6de7780ab6ad358d77353ece8a3d6aad8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TiuTalk/haml/zipball/051a83e6de7780ab6ad358d77353ece8a3d6aad8",
+                "reference": "051a83e6de7780ab6ad358d77353ece8a3d6aad8",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "mthaml/mthaml": "*"
+            },
+            "type": "cakephp-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "WTFPL"
+            ],
+            "authors": [
+                {
+                    "name": "Thiago Belem",
+                    "homepage": "http://thiagobelem.net"
+                }
+            ],
+            "description": "CakePHP HAML template engine",
+            "keywords": [
+                "HAML",
+                "cakephp"
+            ],
+            "time": "2015-09-29 05:15:39"
+        }
+    ],
+    "packages-dev": [
+        {
+            "name": "phpunit/php-code-coverage",
+            "version": "1.2.18",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
+                "reference": "fe2466802556d3fe4e4d1d58ffd3ccfd0a19be0b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/fe2466802556d3fe4e4d1d58ffd3ccfd0a19be0b",
+                "reference": "fe2466802556d3fe4e4d1d58ffd3ccfd0a19be0b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "phpunit/php-file-iterator": ">=1.3.0@stable",
+                "phpunit/php-text-template": ">=1.2.0@stable",
+                "phpunit/php-token-stream": ">=1.1.3,<1.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*@dev"
+            },
+            "suggest": {
+                "ext-dom": "*",
+                "ext-xdebug": ">=2.0.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "PHP/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                ""
+            ],
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sb@sebastian-bergmann.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "Library that provides collection, processing, and rendering functionality for PHP code coverage information.",
+            "homepage": "https://github.com/sebastianbergmann/php-code-coverage",
+            "keywords": [
+                "coverage",
+                "testing",
+                "xunit"
+            ],
+            "time": "2014-09-02T10:13:14+00:00"
+        },
+        {
+            "name": "phpunit/php-file-iterator",
+            "version": "1.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/php-file-iterator.git",
+                "reference": "3cc8f69b3028d0f96a9078e6295d86e9bf019be5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-file-iterator/zipball/3cc8f69b3028d0f96a9078e6295d86e9bf019be5",
+                "reference": "3cc8f69b3028d0f96a9078e6295d86e9bf019be5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sb@sebastian-bergmann.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "FilterIterator implementation that filters files based on a list of suffixes.",
+            "homepage": "https://github.com/sebastianbergmann/php-file-iterator/",
+            "keywords": [
+                "filesystem",
+                "iterator"
+            ],
+            "time": "2016-10-03T07:40:28+00:00"
+        },
+        {
+            "name": "phpunit/php-text-template",
+            "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/php-text-template.git",
+                "reference": "31f8b717e51d9a2afca6c9f046f5d69fc27c8686"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-text-template/zipball/31f8b717e51d9a2afca6c9f046f5d69fc27c8686",
+                "reference": "31f8b717e51d9a2afca6c9f046f5d69fc27c8686",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "Simple template engine.",
+            "homepage": "https://github.com/sebastianbergmann/php-text-template/",
+            "keywords": [
+                "template"
+            ],
+            "time": "2015-06-21T13:50:34+00:00"
+        },
+        {
+            "name": "phpunit/php-timer",
+            "version": "1.0.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/php-timer.git",
+                "reference": "38e9124049cf1a164f1e4537caf19c99bf1eb260"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-timer/zipball/38e9124049cf1a164f1e4537caf19c99bf1eb260",
+                "reference": "38e9124049cf1a164f1e4537caf19c99bf1eb260",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4|~5"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sb@sebastian-bergmann.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "Utility class for timing",
+            "homepage": "https://github.com/sebastianbergmann/php-timer/",
+            "keywords": [
+                "timer"
+            ],
+            "time": "2016-05-12T18:03:57+00:00"
+        },
+        {
+            "name": "phpunit/php-token-stream",
+            "version": "1.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/php-token-stream.git",
+                "reference": "ad4e1e23ae01b483c16f600ff1bebec184588e32"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/ad4e1e23ae01b483c16f600ff1bebec184588e32",
+                "reference": "ad4e1e23ae01b483c16f600ff1bebec184588e32",
+                "shasum": ""
+            },
+            "require": {
+                "ext-tokenizer": "*",
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "PHP/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                ""
+            ],
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sb@sebastian-bergmann.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "Wrapper around PHP's tokenizer extension.",
+            "homepage": "https://github.com/sebastianbergmann/php-token-stream/",
+            "keywords": [
+                "tokenizer"
+            ],
+            "time": "2014-03-03T05:10:30+00:00"
+        },
+        {
+            "name": "phpunit/phpunit",
+            "version": "3.7.38",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/phpunit.git",
+                "reference": "38709dc22d519a3d1be46849868aa2ddf822bcf6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/38709dc22d519a3d1be46849868aa2ddf822bcf6",
+                "reference": "38709dc22d519a3d1be46849868aa2ddf822bcf6",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-dom": "*",
+                "ext-json": "*",
+                "ext-pcre": "*",
+                "ext-reflection": "*",
+                "ext-spl": "*",
+                "php": ">=5.3.3",
+                "phpunit/php-code-coverage": "~1.2",
+                "phpunit/php-file-iterator": "~1.3",
+                "phpunit/php-text-template": "~1.1",
+                "phpunit/php-timer": "~1.0",
+                "phpunit/phpunit-mock-objects": "~1.2",
+                "symfony/yaml": "~2.0"
+            },
+            "require-dev": {
+                "pear-pear.php.net/pear": "1.9.4"
+            },
+            "suggest": {
+                "phpunit/php-invoker": "~1.1"
+            },
+            "bin": [
+                "composer/bin/phpunit"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.7.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "PHPUnit/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                "",
+                "../../symfony/yaml/"
+            ],
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "The PHP Unit Testing framework.",
+            "homepage": "http://www.phpunit.de/",
+            "keywords": [
+                "phpunit",
+                "testing",
+                "xunit"
+            ],
+            "time": "2014-10-17T09:04:17+00:00"
+        },
+        {
+            "name": "phpunit/phpunit-mock-objects",
+            "version": "1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/phpunit-mock-objects.git",
+                "reference": "5794e3c5c5ba0fb037b11d8151add2a07fa82875"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/5794e3c5c5ba0fb037b11d8151add2a07fa82875",
+                "reference": "5794e3c5c5ba0fb037b11d8151add2a07fa82875",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "phpunit/php-text-template": ">=1.1.1@stable"
+            },
+            "suggest": {
+                "ext-soap": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "PHPUnit/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                ""
+            ],
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sb@sebastian-bergmann.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "Mock Object library for PHPUnit",
+            "homepage": "https://github.com/sebastianbergmann/phpunit-mock-objects/",
+            "keywords": [
+                "mock",
+                "xunit"
+            ],
+            "time": "2013-01-13T10:24:48+00:00"
+        },
+        {
+            "name": "symfony/yaml",
+            "version": "v2.8.17",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/yaml.git",
+                "reference": "322a8c2dfbca15ad6b1b27e182899f98ec0e0153"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/322a8c2dfbca15ad6b1b27e182899f98ec0e0153",
+                "reference": "322a8c2dfbca15ad6b1b27e182899f98ec0e0153",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.8-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Yaml\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Yaml Component",
+            "homepage": "https://symfony.com",
+            "time": "2017-01-21T16:40:50+00:00"
+        }
+    ],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "tiutalk/haml": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.3.0",
+        "ext-mcrypt": "*"
+    },
+    "platform-dev": []
+}
